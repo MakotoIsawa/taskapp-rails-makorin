@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby "2.0.0"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
@@ -9,7 +10,6 @@ group :production do
 end
 group :development, :test do
   gem 'sqlite3'
-  gem 'sqlite3-ruby', :require => 'sqlite3' 
 end
 
 # Use SCSS for stylesheets
@@ -49,3 +49,5 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem 'rails_12factor', group: :production
